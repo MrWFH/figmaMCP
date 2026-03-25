@@ -26,6 +26,8 @@ const HYPERVIEW_FEATURES = [
 ]
 
 function TableColumn({ name, features, highlighted }) {
+  const imageBase = `${import.meta.env.BASE_URL}images/`
+
   return (
     <div
       className={`flex-1 min-w-[240px] flex flex-col ${
@@ -48,9 +50,9 @@ function TableColumn({ name, features, highlighted }) {
           className="flex items-center gap-2 px-[30px] py-8 border-b border-divider last:border-b-0"
         >
           {feat.check ? (
-            <img src="/images/icon-check.svg" alt="Yes" className="w-3.5 h-3.5 shrink-0" />
+            <img src={`${imageBase}icon-check.svg`} alt="Yes" className="w-3.5 h-3.5 shrink-0" />
           ) : (
-            <img src="/images/icon-close.svg" alt="No" className="w-3.5 h-3.5 shrink-0" />
+            <img src={`${imageBase}icon-close.svg`} alt="No" className="w-3.5 h-3.5 shrink-0" />
           )}
           <span className="font-mono text-cap text-headline">{feat.text}</span>
         </div>

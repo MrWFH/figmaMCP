@@ -1,11 +1,13 @@
 export default function Testimonial() {
+  const imageBase = `${import.meta.env.BASE_URL}images/`
+
   return (
     <section className="px-6 md:px-10 pb-[120px]">
       <div className="flex flex-col md:flex-row gap-5">
         {/* Image */}
         <div className="md:flex-1 rounded-3.5xl overflow-hidden min-h-[300px] md:min-h-[400px]">
           <img
-            src="/images/testimonial.png"
+            src={`${imageBase}testimonial.png`}
             alt="Testimonial"
             className="w-full h-full object-cover"
           />

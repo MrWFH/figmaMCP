@@ -1,10 +1,12 @@
+const imageBase = `${import.meta.env.BASE_URL}images/`
+
 const LOGOS = [
-  { src: '/images/logo-1.png', alt: 'Partner 1' },
-  { src: '/images/logo-2.png', alt: 'Partner 2' },
-  { src: '/images/logo-3.png', alt: 'Partner 3' },
-  { src: '/images/logo-4.png', alt: 'Partner 4' },
-  { src: '/images/logo-5.png', alt: 'Partner 5' },
-  { src: '/images/logo-6.png', alt: 'Partner 6' },
+  { src: `${imageBase}logo-1.png`, alt: 'Partner 1' },
+  { src: `${imageBase}logo-2.png`, alt: 'Partner 2' },
+  { src: `${imageBase}logo-3.png`, alt: 'Partner 3' },
+  { src: `${imageBase}logo-4.png`, alt: 'Partner 4' },
+  { src: `${imageBase}logo-5.png`, alt: 'Partner 5' },
+  { src: `${imageBase}logo-6.png`, alt: 'Partner 6' },
 ]
 
 export default function TrustedBy() {

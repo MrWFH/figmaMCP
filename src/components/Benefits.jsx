@@ -1,21 +1,23 @@
+const imageBase = `${import.meta.env.BASE_URL}images/`
+
 const BENEFITS = [
   {
-    icon: '/images/icon-cable.svg',
+    icon: `${imageBase}icon-cable.svg`,
     title: 'Amplify Insights',
     description: 'Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.',
   },
   {
-    icon: '/images/icon-earth.svg',
+    icon: `${imageBase}icon-earth.svg`,
     title: 'Control Your Global Presence',
     description: 'Manage and track satellite offices, ensuring consistent performance and streamlined operations everywhere.',
   },
   {
-    icon: '/images/icon-account.svg',
+    icon: `${imageBase}icon-account.svg`,
     title: 'Remove Language Barriers',
     description: 'Adapt to diverse markets with built-in localization for clear communication and enhanced user experience.',
   },
   {
-    icon: '/images/icon-chart.svg',
+    icon: `${imageBase}icon-chart.svg`,
     title: 'Visualize Growth',
     description: 'Generate precise, visually compelling reports that illustrate your growth trajectories across all regions.',
   },
@@ -55,7 +57,7 @@ export default function Benefits() {
       {/* Hero image */}
       <div className="rounded-3.5xl overflow-hidden" style={{ height: 620 }}>
         <img
-          src="/images/hero-benefits.png"
+          src={`${imageBase}hero-benefits.png`}
           alt="Area dashboard visualization"
           className="w-full h-full object-cover"
         />
